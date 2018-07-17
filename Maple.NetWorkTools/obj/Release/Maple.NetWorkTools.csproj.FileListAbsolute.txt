@@ -1,0 +1,8 @@
+E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\bin\Release\Maple.NetWorkTools.exe
+E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\bin\Release\Maple.NetWorkTools.pdb
+E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Release\Maple.NetWorkTools.csprojResolveAssemblyReference.cache
+E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Release\Maple.NetWorkTools.FrmMain.resources
+E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Release\Maple.NetWorkTools.Properties.Resources.resources
+E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Release\Maple.NetWorkTools.csproj.GenerateResource.Cache
+E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Release\Maple.NetWorkTools.exe
+E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Release\Maple.NetWorkTools.pdb

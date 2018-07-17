@@ -1,0 +1,9 @@
+E:\Demo\DotNet\Maple.Tools\Maple.Tools\bin\Release\Maple.Tools.exe.config
+E:\Demo\DotNet\Maple.Tools\Maple.Tools\obj\Release\Maple.Tools.csprojResolveAssemblyReference.cache
+E:\Demo\DotNet\Maple.Tools\Maple.Tools\obj\Release\Maple.Tools.FrmMain.resources
+E:\Demo\DotNet\Maple.Tools\Maple.Tools\obj\Release\Maple.Tools.Properties.Resources.resources
+E:\Demo\DotNet\Maple.Tools\Maple.Tools\obj\Release\Maple.Tools.csproj.GenerateResource.Cache
+E:\Demo\DotNet\Maple.Tools\Maple.Tools\obj\Release\Maple.Tools.exe
+E:\Demo\DotNet\Maple.Tools\Maple.Tools\obj\Release\Maple.Tools.pdb
+E:\Demo\DotNet\Maple.Tools\Maple.Tools\bin\Release\Maple.Tools.exe
+E:\Demo\DotNet\Maple.Tools\Maple.Tools\bin\Release\Maple.Tools.pdb
