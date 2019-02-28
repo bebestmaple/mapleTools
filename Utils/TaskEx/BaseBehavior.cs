@@ -33,6 +33,6 @@ namespace Utils.TaskEx
         /// <summary>
         /// 进度通知
         /// </summary>
-        public static Progress<string> TaskProgress = new Progress<string>();
+        public  Progress<string> TaskProgress = new Progress<string>();
     }
 }

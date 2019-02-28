@@ -24,8 +24,7 @@ namespace Maple.NetWorkTools
 
 
             btnPortScanerStop.Enabled = false;
-            PortScaner.TaskProgress.ProgressChanged += PortScanerStatusProgressEvent;
-            PortScaner.ScanProgress.ProgressChanged += PortScanerIpListProgressEvent;
+           
             /*设置超时时限最小为10s，最大为30s*/
             tbPortScanerTimeOut.Minimum = 10;
             tbPortScanerTimeOut.Maximum = 30;
@@ -95,7 +94,15 @@ namespace Maple.NetWorkTools
 
                             System.Diagnostics.Debug.WriteLine("[Form主线程]ThreadId:{0}", System.Threading.Thread.CurrentThread.ManagedThreadId);
                             portScaner = new PortScaner(txtPortScanerIpStart.Text, txtPortScanerIpEnd.Text, portStart, portEnd, tbPortScanerTimeOut.Value, Convert.ToInt32(txtPortScanerTaskNum.Text));
-                            portScaner.Action();
+                            if (portScaner != null)
+                            {
+                                portScaner.TaskProgress.ProgressChanged += PortScanerStatusProgressEvent;
+                                portScaner.ScanProgress.ProgressChanged += PortScanerIpListProgressEvent;
+
+                                portScaner.Action();
+
+                            }
+                           
                         }
                     }
                     else

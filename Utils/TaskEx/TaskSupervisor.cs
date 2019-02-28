@@ -43,13 +43,12 @@ namespace Utils.TaskEx
         /// </summary>
         public void DisposeInvalidTask()
         {
-            var disposeList = TaskList.Where(task => task.IsCompleted || task.IsCanceled || task.IsFaulted).ToList();
+            var disposeList = TaskList.Where(task => task.IsCompleted || task.IsCanceled || task.IsFaulted);
 
             foreach (var task in disposeList)
             {
                 task.Dispose();
-                Task disposeTask;
-                TaskList.TryTake(out disposeTask);
+                TaskList.TryTake(out Task disposeTask);
             }
         }
 

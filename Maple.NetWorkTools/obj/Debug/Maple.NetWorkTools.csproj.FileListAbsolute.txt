@@ -1,9 +1,0 @@
-E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Debug\Maple.NetWorkTools.FrmMain.resources
-E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Debug\Maple.NetWorkTools.Properties.Resources.resources
-E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Debug\Maple.NetWorkTools.csproj.GenerateResource.Cache
-E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\bin\Debug\MapleNetWorkTool.exe.config
-E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\bin\Debug\MapleNetWorkTool.exe
-E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\bin\Debug\MapleNetWorkTool.pdb
-E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Debug\MapleNetWorkTool.exe
-E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Debug\MapleNetWorkTool.pdb
-E:\Demo\DotNet\Maple.Tools\Maple.NetWorkTools\obj\Debug\Maple.NetWorkTools.csprojResolveAssemblyReference.cache

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -117,7 +118,50 @@
             this.label17 = new System.Windows.Forms.Label();
             this.txtImgBatchDownloadThreadCount = new System.Windows.Forms.TextBox();
             this.txtImgBathDownLoadFilePath = new System.Windows.Forms.TextBox();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.btnImgCutterPause = new System.Windows.Forms.Button();
+            this.btnImgCutterStart = new System.Windows.Forms.Button();
+            this.pgbImgCutterStatus = new System.Windows.Forms.ProgressBar();
+            this.rtxtImgCutterStatus = new System.Windows.Forms.RichTextBox();
+            this.lstvImgCutter = new System.Windows.Forms.ListView();
+            this.imglstImgCutter = new System.Windows.Forms.ImageList(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lbImgCutterSuggestTaskCount = new System.Windows.Forms.Label();
+            this.txtImgCutterTaskCount = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.btnImgCutterSelectImgWatermarkPath = new System.Windows.Forms.Button();
+            this.txtImgCutterImgWatermarkPath = new System.Windows.Forms.TextBox();
+            this.ckbImgCutterImgWatermark = new System.Windows.Forms.CheckBox();
+            this.txtImgCutterTxtWatermark = new System.Windows.Forms.TextBox();
+            this.panelImgCutterWatermarkPositionSelection = new System.Windows.Forms.Panel();
+            this.rbImgCutterMark_RightButtom = new System.Windows.Forms.RadioButton();
+            this.rbImgCutterMark_ButtomCenter = new System.Windows.Forms.RadioButton();
+            this.rbImgCutterMark_LeftButtom = new System.Windows.Forms.RadioButton();
+            this.rbImgCutterMark_RightCenter = new System.Windows.Forms.RadioButton();
+            this.rbImgCutterMark_RightTop = new System.Windows.Forms.RadioButton();
+            this.rbImgCutterMark_Center = new System.Windows.Forms.RadioButton();
+            this.rbImgCutterMark_TopCenter = new System.Windows.Forms.RadioButton();
+            this.rbImgCutterMark_LeftCenter = new System.Windows.Forms.RadioButton();
+            this.rbImgCutterMark_LeftTop = new System.Windows.Forms.RadioButton();
+            this.ckbImgCutterTxtWatermark = new System.Windows.Forms.CheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rbImgCutterSolidHeight = new System.Windows.Forms.RadioButton();
+            this.rbImgCutterSolidWidth = new System.Windows.Forms.RadioButton();
+            this.rbImgCutterSolidBoth = new System.Windows.Forms.RadioButton();
+            this.txtImgCutterImgWidth = new System.Windows.Forms.TextBox();
+            this.txtImgCutterImgHeight = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtImgCutterImgSavePath = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.btnImgCutterImgSavePath = new System.Windows.Forms.Button();
+            this.txtImgCutterImgSelectPath = new System.Windows.Forms.TextBox();
+            this.btnImgCutterSelectImgPath = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
             this.fbdSavePath = new System.Windows.Forms.FolderBrowserDialog();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.tabPage2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -136,6 +180,12 @@
             this.tabPage19.SuspendLayout();
             this.tabControl5.SuspendLayout();
             this.tabPage20.SuspendLayout();
+            this.tabPage9.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.panelImgCutterWatermarkPositionSelection.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage2
@@ -144,7 +194,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(712, 400);
+            this.tabPage2.Size = new System.Drawing.Size(708, 402);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "加解密";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -521,10 +571,11 @@
             this.tabCtrMain.Controls.Add(this.tabPage6);
             this.tabCtrMain.Controls.Add(this.tabPage16);
             this.tabCtrMain.Controls.Add(this.tabPage19);
-            this.tabCtrMain.Location = new System.Drawing.Point(3, 3);
+            this.tabCtrMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabCtrMain.Location = new System.Drawing.Point(0, 0);
             this.tabCtrMain.Name = "tabCtrMain";
             this.tabCtrMain.SelectedIndex = 0;
-            this.tabCtrMain.Size = new System.Drawing.Size(720, 426);
+            this.tabCtrMain.Size = new System.Drawing.Size(716, 428);
             this.tabCtrMain.TabIndex = 0;
             // 
             // tabPage6
@@ -533,7 +584,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(712, 400);
+            this.tabPage6.Size = new System.Drawing.Size(708, 402);
             this.tabPage6.TabIndex = 4;
             this.tabPage6.Text = "编解码";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -708,7 +759,7 @@
             this.tabPage16.Location = new System.Drawing.Point(4, 22);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(712, 400);
+            this.tabPage16.Size = new System.Drawing.Size(708, 402);
             this.tabPage16.TabIndex = 6;
             this.tabPage16.Text = "字符串相关";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -753,11 +804,11 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(31, 257);
+            this.label11.Location = new System.Drawing.Point(7, 257);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 12);
+            this.label11.Size = new System.Drawing.Size(89, 12);
             this.label11.TabIndex = 6;
-            this.label11.Text = "原文本：";
+            this.label11.Text = "需替换的文字：";
             // 
             // label10
             // 
@@ -894,7 +945,6 @@
             this.txtJieQuLength.Name = "txtJieQuLength";
             this.txtJieQuLength.Size = new System.Drawing.Size(100, 21);
             this.txtJieQuLength.TabIndex = 3;
-            this.txtJieQuLength.TextChanged += new System.EventHandler(this.txtJieQueEndIndex_TextChanged);
             this.txtJieQuLength.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtJieQueEndIndex_KeyPress);
             // 
             // txtJieQuStartIndex
@@ -928,7 +978,7 @@
             this.tabPage19.Location = new System.Drawing.Point(4, 22);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage19.Size = new System.Drawing.Size(712, 400);
+            this.tabPage19.Size = new System.Drawing.Size(708, 402);
             this.tabPage19.TabIndex = 7;
             this.tabPage19.Text = "图片";
             this.tabPage19.UseVisualStyleBackColor = true;
@@ -936,10 +986,12 @@
             // tabControl5
             // 
             this.tabControl5.Controls.Add(this.tabPage20);
-            this.tabControl5.Location = new System.Drawing.Point(7, 0);
+            this.tabControl5.Controls.Add(this.tabPage9);
+            this.tabControl5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl5.Location = new System.Drawing.Point(3, 3);
             this.tabControl5.Name = "tabControl5";
             this.tabControl5.SelectedIndex = 0;
-            this.tabControl5.Size = new System.Drawing.Size(699, 400);
+            this.tabControl5.Size = new System.Drawing.Size(702, 396);
             this.tabControl5.TabIndex = 0;
             // 
             // tabPage20
@@ -955,7 +1007,7 @@
             this.tabPage20.Location = new System.Drawing.Point(4, 22);
             this.tabPage20.Name = "tabPage20";
             this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage20.Size = new System.Drawing.Size(691, 374);
+            this.tabPage20.Size = new System.Drawing.Size(694, 370);
             this.tabPage20.TabIndex = 0;
             this.tabPage20.Text = "图片批量下载";
             this.tabPage20.UseVisualStyleBackColor = true;
@@ -1024,7 +1076,6 @@
             this.txtImgBatchDownloadThreadCount.Name = "txtImgBatchDownloadThreadCount";
             this.txtImgBatchDownloadThreadCount.Size = new System.Drawing.Size(157, 21);
             this.txtImgBatchDownloadThreadCount.TabIndex = 2;
-            this.txtImgBatchDownloadThreadCount.Text = "10";
             this.txtImgBatchDownloadThreadCount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtImgBatchDownloadThreadCount_KeyPress);
             // 
             // txtImgBathDownLoadFilePath
@@ -1036,12 +1087,466 @@
             this.txtImgBathDownLoadFilePath.TabIndex = 0;
             this.txtImgBathDownLoadFilePath.Text = "请选择文件";
             // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.btnImgCutterPause);
+            this.tabPage9.Controls.Add(this.btnImgCutterStart);
+            this.tabPage9.Controls.Add(this.pgbImgCutterStatus);
+            this.tabPage9.Controls.Add(this.rtxtImgCutterStatus);
+            this.tabPage9.Controls.Add(this.lstvImgCutter);
+            this.tabPage9.Controls.Add(this.groupBox1);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(694, 370);
+            this.tabPage9.TabIndex = 1;
+            this.tabPage9.Text = "图片裁剪";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // btnImgCutterPause
+            // 
+            this.btnImgCutterPause.Enabled = false;
+            this.btnImgCutterPause.Location = new System.Drawing.Point(202, 329);
+            this.btnImgCutterPause.Name = "btnImgCutterPause";
+            this.btnImgCutterPause.Size = new System.Drawing.Size(75, 23);
+            this.btnImgCutterPause.TabIndex = 7;
+            this.btnImgCutterPause.Text = "暂停";
+            this.btnImgCutterPause.UseVisualStyleBackColor = true;
+            this.btnImgCutterPause.Click += new System.EventHandler(this.btnImgCutterPause_Click);
+            // 
+            // btnImgCutterStart
+            // 
+            this.btnImgCutterStart.Location = new System.Drawing.Point(16, 329);
+            this.btnImgCutterStart.Name = "btnImgCutterStart";
+            this.btnImgCutterStart.Size = new System.Drawing.Size(75, 23);
+            this.btnImgCutterStart.TabIndex = 6;
+            this.btnImgCutterStart.Text = "开始";
+            this.btnImgCutterStart.UseVisualStyleBackColor = true;
+            this.btnImgCutterStart.Click += new System.EventHandler(this.btnImgCutterStart_Click);
+            // 
+            // pgbImgCutterStatus
+            // 
+            this.pgbImgCutterStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pgbImgCutterStatus.Location = new System.Drawing.Point(3, 356);
+            this.pgbImgCutterStatus.Name = "pgbImgCutterStatus";
+            this.pgbImgCutterStatus.Size = new System.Drawing.Size(688, 11);
+            this.pgbImgCutterStatus.TabIndex = 5;
+            // 
+            // rtxtImgCutterStatus
+            // 
+            this.rtxtImgCutterStatus.BackColor = System.Drawing.SystemColors.Window;
+            this.rtxtImgCutterStatus.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.rtxtImgCutterStatus.Location = new System.Drawing.Point(289, 235);
+            this.rtxtImgCutterStatus.Name = "rtxtImgCutterStatus";
+            this.rtxtImgCutterStatus.Size = new System.Drawing.Size(399, 117);
+            this.rtxtImgCutterStatus.TabIndex = 4;
+            this.rtxtImgCutterStatus.Text = "";
+            // 
+            // lstvImgCutter
+            // 
+            this.lstvImgCutter.LargeImageList = this.imglstImgCutter;
+            this.lstvImgCutter.Location = new System.Drawing.Point(289, 7);
+            this.lstvImgCutter.Name = "lstvImgCutter";
+            this.lstvImgCutter.Size = new System.Drawing.Size(399, 222);
+            this.lstvImgCutter.TabIndex = 3;
+            this.lstvImgCutter.UseCompatibleStateImageBehavior = false;
+            // 
+            // imglstImgCutter
+            // 
+            this.imglstImgCutter.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imglstImgCutter.ImageSize = new System.Drawing.Size(64, 64);
+            this.imglstImgCutter.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.txtImgCutterImgSavePath);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.btnImgCutterImgSavePath);
+            this.groupBox1.Controls.Add(this.txtImgCutterImgSelectPath);
+            this.groupBox1.Controls.Add(this.btnImgCutterSelectImgPath);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Location = new System.Drawing.Point(7, 7);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(276, 316);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "选择路径";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.panel3);
+            this.groupBox2.Controls.Add(this.lbImgCutterSuggestTaskCount);
+            this.groupBox2.Controls.Add(this.txtImgCutterTaskCount);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Controls.Add(this.label25);
+            this.groupBox2.Controls.Add(this.panelImgCutterWatermarkPositionSelection);
+            this.groupBox2.Controls.Add(this.panel1);
+            this.groupBox2.Controls.Add(this.txtImgCutterImgWidth);
+            this.groupBox2.Controls.Add(this.txtImgCutterImgHeight);
+            this.groupBox2.Controls.Add(this.label23);
+            this.groupBox2.Controls.Add(this.label24);
+            this.groupBox2.Location = new System.Drawing.Point(0, 75);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(277, 241);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "设置";
+            // 
+            // lbImgCutterSuggestTaskCount
+            // 
+            this.lbImgCutterSuggestTaskCount.AutoSize = true;
+            this.lbImgCutterSuggestTaskCount.Location = new System.Drawing.Point(167, 217);
+            this.lbImgCutterSuggestTaskCount.Name = "lbImgCutterSuggestTaskCount";
+            this.lbImgCutterSuggestTaskCount.Size = new System.Drawing.Size(77, 12);
+            this.lbImgCutterSuggestTaskCount.TabIndex = 20;
+            this.lbImgCutterSuggestTaskCount.Text = "建议线程数：";
+            // 
+            // txtImgCutterTaskCount
+            // 
+            this.txtImgCutterTaskCount.Location = new System.Drawing.Point(61, 214);
+            this.txtImgCutterTaskCount.Name = "txtImgCutterTaskCount";
+            this.txtImgCutterTaskCount.Size = new System.Drawing.Size(100, 21);
+            this.txtImgCutterTaskCount.TabIndex = 19;
+            this.txtImgCutterTaskCount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtImgBatchDownloadThreadCount_KeyPress);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(5, 220);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(53, 12);
+            this.label22.TabIndex = 18;
+            this.label22.Text = "处理线程";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(187, 23);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(65, 12);
+            this.label25.TabIndex = 17;
+            this.label25.Text = "单位：像素";
+            // 
+            // btnImgCutterSelectImgWatermarkPath
+            // 
+            this.btnImgCutterSelectImgWatermarkPath.Enabled = false;
+            this.btnImgCutterSelectImgWatermarkPath.Location = new System.Drawing.Point(198, 30);
+            this.btnImgCutterSelectImgWatermarkPath.Name = "btnImgCutterSelectImgWatermarkPath";
+            this.btnImgCutterSelectImgWatermarkPath.Size = new System.Drawing.Size(75, 23);
+            this.btnImgCutterSelectImgWatermarkPath.TabIndex = 6;
+            this.btnImgCutterSelectImgWatermarkPath.Text = "选择...";
+            this.btnImgCutterSelectImgWatermarkPath.UseVisualStyleBackColor = true;
+            this.btnImgCutterSelectImgWatermarkPath.Click += new System.EventHandler(this.btnImgCutterSelectImgWatermarkPath_Click);
+            // 
+            // txtImgCutterImgWatermarkPath
+            // 
+            this.txtImgCutterImgWatermarkPath.Enabled = false;
+            this.txtImgCutterImgWatermarkPath.Location = new System.Drawing.Point(89, 31);
+            this.txtImgCutterImgWatermarkPath.Name = "txtImgCutterImgWatermarkPath";
+            this.txtImgCutterImgWatermarkPath.Size = new System.Drawing.Size(103, 21);
+            this.txtImgCutterImgWatermarkPath.TabIndex = 16;
+            // 
+            // ckbImgCutterImgWatermark
+            // 
+            this.ckbImgCutterImgWatermark.AutoSize = true;
+            this.ckbImgCutterImgWatermark.Location = new System.Drawing.Point(11, 36);
+            this.ckbImgCutterImgWatermark.Name = "ckbImgCutterImgWatermark";
+            this.ckbImgCutterImgWatermark.Size = new System.Drawing.Size(72, 16);
+            this.ckbImgCutterImgWatermark.TabIndex = 15;
+            this.ckbImgCutterImgWatermark.Tag = "2";
+            this.ckbImgCutterImgWatermark.Text = "图片水印";
+            this.ckbImgCutterImgWatermark.UseVisualStyleBackColor = true;
+            this.ckbImgCutterImgWatermark.Click += new System.EventHandler(this.ckbImgCutterWatermark_Click);
+            // 
+            // txtImgCutterTxtWatermark
+            // 
+            this.txtImgCutterTxtWatermark.Enabled = false;
+            this.txtImgCutterTxtWatermark.Location = new System.Drawing.Point(91, 3);
+            this.txtImgCutterTxtWatermark.Name = "txtImgCutterTxtWatermark";
+            this.txtImgCutterTxtWatermark.Size = new System.Drawing.Size(182, 21);
+            this.txtImgCutterTxtWatermark.TabIndex = 14;
+            this.txtImgCutterTxtWatermark.TextChanged += new System.EventHandler(this.txtImgCutterTxtWatermark_TextChanged);
+            // 
+            // panelImgCutterWatermarkPositionSelection
+            // 
+            this.panelImgCutterWatermarkPositionSelection.Controls.Add(this.rbImgCutterMark_RightButtom);
+            this.panelImgCutterWatermarkPositionSelection.Controls.Add(this.rbImgCutterMark_ButtomCenter);
+            this.panelImgCutterWatermarkPositionSelection.Controls.Add(this.rbImgCutterMark_LeftButtom);
+            this.panelImgCutterWatermarkPositionSelection.Controls.Add(this.rbImgCutterMark_RightCenter);
+            this.panelImgCutterWatermarkPositionSelection.Controls.Add(this.rbImgCutterMark_RightTop);
+            this.panelImgCutterWatermarkPositionSelection.Controls.Add(this.rbImgCutterMark_Center);
+            this.panelImgCutterWatermarkPositionSelection.Controls.Add(this.rbImgCutterMark_TopCenter);
+            this.panelImgCutterWatermarkPositionSelection.Controls.Add(this.rbImgCutterMark_LeftCenter);
+            this.panelImgCutterWatermarkPositionSelection.Controls.Add(this.rbImgCutterMark_LeftTop);
+            this.panelImgCutterWatermarkPositionSelection.Location = new System.Drawing.Point(0, 135);
+            this.panelImgCutterWatermarkPositionSelection.Name = "panelImgCutterWatermarkPositionSelection";
+            this.panelImgCutterWatermarkPositionSelection.Size = new System.Drawing.Size(276, 73);
+            this.panelImgCutterWatermarkPositionSelection.TabIndex = 13;
+            // 
+            // rbImgCutterMark_RightButtom
+            // 
+            this.rbImgCutterMark_RightButtom.AutoSize = true;
+            this.rbImgCutterMark_RightButtom.Checked = true;
+            this.rbImgCutterMark_RightButtom.Enabled = false;
+            this.rbImgCutterMark_RightButtom.Location = new System.Drawing.Point(223, 47);
+            this.rbImgCutterMark_RightButtom.Name = "rbImgCutterMark_RightButtom";
+            this.rbImgCutterMark_RightButtom.Size = new System.Drawing.Size(47, 16);
+            this.rbImgCutterMark_RightButtom.TabIndex = 8;
+            this.rbImgCutterMark_RightButtom.TabStop = true;
+            this.rbImgCutterMark_RightButtom.Text = "右下";
+            this.rbImgCutterMark_RightButtom.UseVisualStyleBackColor = true;
+            // 
+            // rbImgCutterMark_ButtomCenter
+            // 
+            this.rbImgCutterMark_ButtomCenter.AutoSize = true;
+            this.rbImgCutterMark_ButtomCenter.Enabled = false;
+            this.rbImgCutterMark_ButtomCenter.Location = new System.Drawing.Point(114, 47);
+            this.rbImgCutterMark_ButtomCenter.Name = "rbImgCutterMark_ButtomCenter";
+            this.rbImgCutterMark_ButtomCenter.Size = new System.Drawing.Size(47, 16);
+            this.rbImgCutterMark_ButtomCenter.TabIndex = 7;
+            this.rbImgCutterMark_ButtomCenter.Text = "下中";
+            this.rbImgCutterMark_ButtomCenter.UseVisualStyleBackColor = true;
+            // 
+            // rbImgCutterMark_LeftButtom
+            // 
+            this.rbImgCutterMark_LeftButtom.AutoSize = true;
+            this.rbImgCutterMark_LeftButtom.Enabled = false;
+            this.rbImgCutterMark_LeftButtom.Location = new System.Drawing.Point(5, 47);
+            this.rbImgCutterMark_LeftButtom.Name = "rbImgCutterMark_LeftButtom";
+            this.rbImgCutterMark_LeftButtom.Size = new System.Drawing.Size(47, 16);
+            this.rbImgCutterMark_LeftButtom.TabIndex = 6;
+            this.rbImgCutterMark_LeftButtom.Text = "左下";
+            this.rbImgCutterMark_LeftButtom.UseVisualStyleBackColor = true;
+            // 
+            // rbImgCutterMark_RightCenter
+            // 
+            this.rbImgCutterMark_RightCenter.AutoSize = true;
+            this.rbImgCutterMark_RightCenter.Enabled = false;
+            this.rbImgCutterMark_RightCenter.Location = new System.Drawing.Point(223, 25);
+            this.rbImgCutterMark_RightCenter.Name = "rbImgCutterMark_RightCenter";
+            this.rbImgCutterMark_RightCenter.Size = new System.Drawing.Size(47, 16);
+            this.rbImgCutterMark_RightCenter.TabIndex = 5;
+            this.rbImgCutterMark_RightCenter.Text = "右中";
+            this.rbImgCutterMark_RightCenter.UseVisualStyleBackColor = true;
+            // 
+            // rbImgCutterMark_RightTop
+            // 
+            this.rbImgCutterMark_RightTop.AutoSize = true;
+            this.rbImgCutterMark_RightTop.Enabled = false;
+            this.rbImgCutterMark_RightTop.Location = new System.Drawing.Point(223, 3);
+            this.rbImgCutterMark_RightTop.Name = "rbImgCutterMark_RightTop";
+            this.rbImgCutterMark_RightTop.Size = new System.Drawing.Size(47, 16);
+            this.rbImgCutterMark_RightTop.TabIndex = 4;
+            this.rbImgCutterMark_RightTop.Text = "右上";
+            this.rbImgCutterMark_RightTop.UseVisualStyleBackColor = true;
+            // 
+            // rbImgCutterMark_Center
+            // 
+            this.rbImgCutterMark_Center.AutoSize = true;
+            this.rbImgCutterMark_Center.Enabled = false;
+            this.rbImgCutterMark_Center.Location = new System.Drawing.Point(114, 25);
+            this.rbImgCutterMark_Center.Name = "rbImgCutterMark_Center";
+            this.rbImgCutterMark_Center.Size = new System.Drawing.Size(35, 16);
+            this.rbImgCutterMark_Center.TabIndex = 3;
+            this.rbImgCutterMark_Center.Text = "中";
+            this.rbImgCutterMark_Center.UseVisualStyleBackColor = true;
+            // 
+            // rbImgCutterMark_TopCenter
+            // 
+            this.rbImgCutterMark_TopCenter.AutoSize = true;
+            this.rbImgCutterMark_TopCenter.Enabled = false;
+            this.rbImgCutterMark_TopCenter.Location = new System.Drawing.Point(114, 3);
+            this.rbImgCutterMark_TopCenter.Name = "rbImgCutterMark_TopCenter";
+            this.rbImgCutterMark_TopCenter.Size = new System.Drawing.Size(47, 16);
+            this.rbImgCutterMark_TopCenter.TabIndex = 2;
+            this.rbImgCutterMark_TopCenter.Text = "上中";
+            this.rbImgCutterMark_TopCenter.UseVisualStyleBackColor = true;
+            // 
+            // rbImgCutterMark_LeftCenter
+            // 
+            this.rbImgCutterMark_LeftCenter.AutoSize = true;
+            this.rbImgCutterMark_LeftCenter.Enabled = false;
+            this.rbImgCutterMark_LeftCenter.Location = new System.Drawing.Point(5, 25);
+            this.rbImgCutterMark_LeftCenter.Name = "rbImgCutterMark_LeftCenter";
+            this.rbImgCutterMark_LeftCenter.Size = new System.Drawing.Size(47, 16);
+            this.rbImgCutterMark_LeftCenter.TabIndex = 1;
+            this.rbImgCutterMark_LeftCenter.Text = "左中";
+            this.rbImgCutterMark_LeftCenter.UseVisualStyleBackColor = true;
+            // 
+            // rbImgCutterMark_LeftTop
+            // 
+            this.rbImgCutterMark_LeftTop.AutoSize = true;
+            this.rbImgCutterMark_LeftTop.Enabled = false;
+            this.rbImgCutterMark_LeftTop.Location = new System.Drawing.Point(5, 3);
+            this.rbImgCutterMark_LeftTop.Name = "rbImgCutterMark_LeftTop";
+            this.rbImgCutterMark_LeftTop.Size = new System.Drawing.Size(47, 16);
+            this.rbImgCutterMark_LeftTop.TabIndex = 0;
+            this.rbImgCutterMark_LeftTop.Text = "左上";
+            this.rbImgCutterMark_LeftTop.UseVisualStyleBackColor = true;
+            // 
+            // ckbImgCutterTxtWatermark
+            // 
+            this.ckbImgCutterTxtWatermark.AutoSize = true;
+            this.ckbImgCutterTxtWatermark.Location = new System.Drawing.Point(11, 8);
+            this.ckbImgCutterTxtWatermark.Name = "ckbImgCutterTxtWatermark";
+            this.ckbImgCutterTxtWatermark.Size = new System.Drawing.Size(72, 16);
+            this.ckbImgCutterTxtWatermark.TabIndex = 12;
+            this.ckbImgCutterTxtWatermark.Tag = "1";
+            this.ckbImgCutterTxtWatermark.Text = "文字水印";
+            this.ckbImgCutterTxtWatermark.UseVisualStyleBackColor = true;
+            this.ckbImgCutterTxtWatermark.Click += new System.EventHandler(this.ckbImgCutterWatermark_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.rbImgCutterSolidHeight);
+            this.panel1.Controls.Add(this.rbImgCutterSolidWidth);
+            this.panel1.Controls.Add(this.rbImgCutterSolidBoth);
+            this.panel1.Location = new System.Drawing.Point(7, 47);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(264, 30);
+            this.panel1.TabIndex = 11;
+            // 
+            // rbImgCutterSolidHeight
+            // 
+            this.rbImgCutterSolidHeight.AutoSize = true;
+            this.rbImgCutterSolidHeight.Location = new System.Drawing.Point(168, 8);
+            this.rbImgCutterSolidHeight.Name = "rbImgCutterSolidHeight";
+            this.rbImgCutterSolidHeight.Size = new System.Drawing.Size(59, 16);
+            this.rbImgCutterSolidHeight.TabIndex = 0;
+            this.rbImgCutterSolidHeight.Text = "固定高";
+            this.rbImgCutterSolidHeight.UseVisualStyleBackColor = true;
+            // 
+            // rbImgCutterSolidWidth
+            // 
+            this.rbImgCutterSolidWidth.AutoSize = true;
+            this.rbImgCutterSolidWidth.Location = new System.Drawing.Point(92, 8);
+            this.rbImgCutterSolidWidth.Name = "rbImgCutterSolidWidth";
+            this.rbImgCutterSolidWidth.Size = new System.Drawing.Size(59, 16);
+            this.rbImgCutterSolidWidth.TabIndex = 0;
+            this.rbImgCutterSolidWidth.Text = "固定宽";
+            this.rbImgCutterSolidWidth.UseVisualStyleBackColor = true;
+            // 
+            // rbImgCutterSolidBoth
+            // 
+            this.rbImgCutterSolidBoth.AutoSize = true;
+            this.rbImgCutterSolidBoth.Checked = true;
+            this.rbImgCutterSolidBoth.Location = new System.Drawing.Point(4, 8);
+            this.rbImgCutterSolidBoth.Name = "rbImgCutterSolidBoth";
+            this.rbImgCutterSolidBoth.Size = new System.Drawing.Size(71, 16);
+            this.rbImgCutterSolidBoth.TabIndex = 0;
+            this.rbImgCutterSolidBoth.TabStop = true;
+            this.rbImgCutterSolidBoth.Text = "固定宽高";
+            this.rbImgCutterSolidBoth.UseVisualStyleBackColor = true;
+            // 
+            // txtImgCutterImgWidth
+            // 
+            this.txtImgCutterImgWidth.Location = new System.Drawing.Point(32, 20);
+            this.txtImgCutterImgWidth.Name = "txtImgCutterImgWidth";
+            this.txtImgCutterImgWidth.Size = new System.Drawing.Size(53, 21);
+            this.txtImgCutterImgWidth.TabIndex = 9;
+            this.txtImgCutterImgWidth.Text = "600";
+            // 
+            // txtImgCutterImgHeight
+            // 
+            this.txtImgCutterImgHeight.Location = new System.Drawing.Point(125, 20);
+            this.txtImgCutterImgHeight.Name = "txtImgCutterImgHeight";
+            this.txtImgCutterImgHeight.Size = new System.Drawing.Size(53, 21);
+            this.txtImgCutterImgHeight.TabIndex = 10;
+            this.txtImgCutterImgHeight.Text = "400";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(5, 23);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(17, 12);
+            this.label23.TabIndex = 7;
+            this.label23.Text = "宽";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(98, 23);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(17, 12);
+            this.label24.TabIndex = 8;
+            this.label24.Text = "高";
+            // 
+            // txtImgCutterImgSavePath
+            // 
+            this.txtImgCutterImgSavePath.Enabled = false;
+            this.txtImgCutterImgSavePath.Location = new System.Drawing.Point(64, 46);
+            this.txtImgCutterImgSavePath.Name = "txtImgCutterImgSavePath";
+            this.txtImgCutterImgSavePath.Size = new System.Drawing.Size(125, 21);
+            this.txtImgCutterImgSavePath.TabIndex = 5;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(4, 48);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(53, 12);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "保存路径";
+            // 
+            // btnImgCutterImgSavePath
+            // 
+            this.btnImgCutterImgSavePath.Location = new System.Drawing.Point(196, 46);
+            this.btnImgCutterImgSavePath.Name = "btnImgCutterImgSavePath";
+            this.btnImgCutterImgSavePath.Size = new System.Drawing.Size(75, 23);
+            this.btnImgCutterImgSavePath.TabIndex = 4;
+            this.btnImgCutterImgSavePath.Text = "选择...";
+            this.btnImgCutterImgSavePath.UseVisualStyleBackColor = true;
+            this.btnImgCutterImgSavePath.Click += new System.EventHandler(this.btnImgCutterImgSavePath_Click);
+            // 
+            // txtImgCutterImgSelectPath
+            // 
+            this.txtImgCutterImgSelectPath.Enabled = false;
+            this.txtImgCutterImgSelectPath.Location = new System.Drawing.Point(64, 17);
+            this.txtImgCutterImgSelectPath.Name = "txtImgCutterImgSelectPath";
+            this.txtImgCutterImgSelectPath.Size = new System.Drawing.Size(125, 21);
+            this.txtImgCutterImgSelectPath.TabIndex = 2;
+            // 
+            // btnImgCutterSelectImgPath
+            // 
+            this.btnImgCutterSelectImgPath.Location = new System.Drawing.Point(196, 17);
+            this.btnImgCutterSelectImgPath.Name = "btnImgCutterSelectImgPath";
+            this.btnImgCutterSelectImgPath.Size = new System.Drawing.Size(76, 23);
+            this.btnImgCutterSelectImgPath.TabIndex = 1;
+            this.btnImgCutterSelectImgPath.Text = "选择...";
+            this.btnImgCutterSelectImgPath.UseVisualStyleBackColor = true;
+            this.btnImgCutterSelectImgPath.Click += new System.EventHandler(this.btnImgCutterSelectImgPath_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(4, 23);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(53, 12);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "处理路径";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnImgCutterSelectImgWatermarkPath);
+            this.panel3.Controls.Add(this.txtImgCutterTxtWatermark);
+            this.panel3.Controls.Add(this.txtImgCutterImgWatermarkPath);
+            this.panel3.Controls.Add(this.ckbImgCutterTxtWatermark);
+            this.panel3.Controls.Add(this.ckbImgCutterImgWatermark);
+            this.panel3.Location = new System.Drawing.Point(0, 78);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(277, 55);
+            this.panel3.TabIndex = 8;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(716, 428);
             this.Controls.Add(this.tabCtrMain);
+            this.DoubleBuffered = true;
             this.MaximizeBox = false;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1073,6 +1578,17 @@
             this.tabControl5.ResumeLayout(false);
             this.tabPage20.ResumeLayout(false);
             this.tabPage20.PerformLayout();
+            this.tabPage9.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.panelImgCutterWatermarkPositionSelection.ResumeLayout(false);
+            this.panelImgCutterWatermarkPositionSelection.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1169,7 +1685,49 @@
         private System.Windows.Forms.Button btnSha256Encrypt;
         private System.Windows.Forms.RichTextBox rtxtShaEncryptSource;
         private System.Windows.Forms.Button btnSha512Encrypt;
-
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.Button btnImgCutterPause;
+        private System.Windows.Forms.Button btnImgCutterStart;
+        private System.Windows.Forms.ProgressBar pgbImgCutterStatus;
+        private System.Windows.Forms.RichTextBox rtxtImgCutterStatus;
+        private System.Windows.Forms.ListView lstvImgCutter;
+        private System.Windows.Forms.ImageList imglstImgCutter;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lbImgCutterSuggestTaskCount;
+        private System.Windows.Forms.TextBox txtImgCutterTaskCount;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button btnImgCutterSelectImgWatermarkPath;
+        private System.Windows.Forms.TextBox txtImgCutterImgWatermarkPath;
+        private System.Windows.Forms.CheckBox ckbImgCutterImgWatermark;
+        private System.Windows.Forms.TextBox txtImgCutterTxtWatermark;
+        private System.Windows.Forms.Panel panelImgCutterWatermarkPositionSelection;
+        private System.Windows.Forms.RadioButton rbImgCutterMark_RightButtom;
+        private System.Windows.Forms.RadioButton rbImgCutterMark_ButtomCenter;
+        private System.Windows.Forms.RadioButton rbImgCutterMark_LeftButtom;
+        private System.Windows.Forms.RadioButton rbImgCutterMark_RightCenter;
+        private System.Windows.Forms.RadioButton rbImgCutterMark_RightTop;
+        private System.Windows.Forms.RadioButton rbImgCutterMark_Center;
+        private System.Windows.Forms.RadioButton rbImgCutterMark_TopCenter;
+        private System.Windows.Forms.RadioButton rbImgCutterMark_LeftCenter;
+        private System.Windows.Forms.RadioButton rbImgCutterMark_LeftTop;
+        private System.Windows.Forms.CheckBox ckbImgCutterTxtWatermark;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton rbImgCutterSolidHeight;
+        private System.Windows.Forms.RadioButton rbImgCutterSolidWidth;
+        private System.Windows.Forms.RadioButton rbImgCutterSolidBoth;
+        private System.Windows.Forms.TextBox txtImgCutterImgWidth;
+        private System.Windows.Forms.TextBox txtImgCutterImgHeight;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox txtImgCutterImgSavePath;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button btnImgCutterImgSavePath;
+        private System.Windows.Forms.TextBox txtImgCutterImgSelectPath;
+        private System.Windows.Forms.Button btnImgCutterSelectImgPath;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

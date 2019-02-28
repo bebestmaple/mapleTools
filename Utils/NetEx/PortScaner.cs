@@ -287,7 +287,7 @@ namespace Utils.NetEx
         /// <summary>
         /// 进度通知
         /// </summary>
-        public static Progress<IpState> ScanProgress = new Progress<IpState>();
+        public  Progress<IpState> ScanProgress = new Progress<IpState>();
 
 
         private string GetServiceName(int port)

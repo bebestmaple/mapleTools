@@ -46,10 +46,16 @@
   <ItemGroup>
     <Compile Include="CollectionEx\ConcurrentBagHelper.cs" />
     <Compile Include="CollectionEx\ConcurrentQueueHelper.cs" />
+    <Compile Include="FileSystemEx\FileHelper.cs" />
     <Compile Include="FileSystemEx\FolderHelper.cs" />
     <Compile Include="HttpEx\DownloadHelper.cs" />
     <Compile Include="HttpEx\HttpHelper.cs" />
     <Compile Include="HttpEx\UrlHelper.cs" />
+    <Compile Include="ImageEx\ImageCutter.cs" />
+    <Compile Include="ImageEx\ImgHelper.cs" />
+    <Compile Include="ImageEx\ImageWaterMark\WaterMarkHelper.cs" />
+    <Compile Include="ImageEx\ImageWaterMark\WatermarkPositionEnum.cs" />
+    <Compile Include="ImageEx\ImageWaterMark\WatermarkTypeEnum.cs" />
     <Compile Include="NetEx\IpHelper.cs" />
     <Compile Include="NetEx\PortScaner.cs" />
     <Compile Include="TaskEx\BaseBehavior.cs" />

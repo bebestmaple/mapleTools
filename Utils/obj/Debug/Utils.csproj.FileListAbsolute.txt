@@ -1,5 +1,0 @@
-E:\Demo\DotNet\Maple.Tools\Utils\bin\Debug\Utils.dll
-E:\Demo\DotNet\Maple.Tools\Utils\bin\Debug\Utils.pdb
-E:\Demo\DotNet\Maple.Tools\Utils\obj\Debug\Utils.dll
-E:\Demo\DotNet\Maple.Tools\Utils\obj\Debug\Utils.pdb
-E:\Demo\DotNet\Maple.Tools\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
